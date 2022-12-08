@@ -72,6 +72,7 @@ namespace SoftTwat
             using (SaveFileDialog saveDialog = new SaveFileDialog())
             {
                 saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveDialog.DefaultFileName = "mygames.txt";
                 saveDialog.FilterIndex = 1;
                 saveDialog.RestoreDirectory = true;
 
@@ -189,10 +190,10 @@ namespace SoftTwat
                 };*/
 
                 // Add the PathItem object to the first ComboBox
-                folderComboBox1.Items.Add(folderBrowserDialog.SelectedPath);
+                folderComboBox3.Items.Add(folderBrowserDialog.SelectedPath);
 
                 // Select the added PathItem object in the first ComboBox
-                folderComboBox1.SelectedItem = folderBrowserDialog.SelectedPath;
+                folderComboBox3.SelectedItem = folderBrowserDialog.SelectedPath;
             }
         }
         private void compareButton_Click(object sender, EventArgs e)
@@ -252,6 +253,7 @@ namespace SoftTwat
                             saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
                             saveDialog.FilterIndex = 1;
                             saveDialog.RestoreDirectory = true;
+                            saveDialog.DefaultFileName = "ourgames.txt";
 
                             if (saveDialog.ShowDialog() == DialogResult.OK)
                             {
@@ -304,6 +306,7 @@ namespace SoftTwat
                         saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
                         saveDialog.FilterIndex = 1;
                         saveDialog.RestoreDirectory = true;
+                        saveDialog.DefaultFileName = "mygames.txt";
 
                         if (saveDialog.ShowDialog() == DialogResult.OK)
                         {
