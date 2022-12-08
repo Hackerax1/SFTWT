@@ -1,0 +1,10 @@
+C:\Users\jackd\source\repos\SoftTwat\bin\Debug\SoftTwat.exe.config
+C:\Users\jackd\source\repos\SoftTwat\bin\Debug\SoftTwat.exe
+C:\Users\jackd\source\repos\SoftTwat\bin\Debug\SoftTwat.pdb
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.csproj.AssemblyReference.cache
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.MainForm.resources
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.Properties.Resources.resources
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.csproj.GenerateResource.cache
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.csproj.CoreCompileInputs.cache
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.exe
+C:\Users\jackd\source\repos\SoftTwat\obj\Debug\SoftTwat.pdb
