@@ -30,12 +30,16 @@ namespace SoftTwat
         private void InitializeComponent()
         {
             this.listButton = new System.Windows.Forms.Button();
-            this.folderTextBox1 = new System.Windows.Forms.TextBox();
             this.compareButton = new System.Windows.Forms.Button();
-            this.folderTextBox2 = new System.Windows.Forms.TextBox();
-            this.folderTextBox3 = new System.Windows.Forms.TextBox();
             this.combineButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.selectFolderButton1 = new System.Windows.Forms.Button();
+            this.selectFolderButton3 = new System.Windows.Forms.Button();
+            this.selectFolderButton2 = new System.Windows.Forms.Button();
+            this.folderComboBox1 = new System.Windows.Forms.ComboBox();
+            this.folderComboBox2 = new System.Windows.Forms.ComboBox();
+            this.folderComboBox3 = new System.Windows.Forms.ComboBox();
+            this.showAliasesCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // listButton
@@ -48,13 +52,6 @@ namespace SoftTwat
             this.listButton.UseVisualStyleBackColor = true;
             this.listButton.Click += new System.EventHandler(this.listButton_Click_1);
             // 
-            // folderTextBox1
-            // 
-            this.folderTextBox1.Location = new System.Drawing.Point(141, 52);
-            this.folderTextBox1.Name = "folderTextBox1";
-            this.folderTextBox1.Size = new System.Drawing.Size(461, 22);
-            this.folderTextBox1.TabIndex = 1;
-            // 
             // compareButton
             // 
             this.compareButton.Location = new System.Drawing.Point(67, 324);
@@ -64,20 +61,6 @@ namespace SoftTwat
             this.compareButton.Text = "Compare Libraries";
             this.compareButton.UseVisualStyleBackColor = true;
             this.compareButton.Click += new System.EventHandler(this.compareButton_Click);
-            // 
-            // folderTextBox2
-            // 
-            this.folderTextBox2.Location = new System.Drawing.Point(141, 95);
-            this.folderTextBox2.Name = "folderTextBox2";
-            this.folderTextBox2.Size = new System.Drawing.Size(461, 22);
-            this.folderTextBox2.TabIndex = 3;
-            // 
-            // folderTextBox3
-            // 
-            this.folderTextBox3.Location = new System.Drawing.Point(141, 142);
-            this.folderTextBox3.Name = "folderTextBox3";
-            this.folderTextBox3.Size = new System.Drawing.Size(461, 22);
-            this.folderTextBox3.TabIndex = 4;
             // 
             // combineButton
             // 
@@ -92,23 +75,91 @@ namespace SoftTwat
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(141, 13);
+            this.label1.Location = new System.Drawing.Point(64, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(284, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Input up to three directories of game folders";
+            // 
+            // selectFolderButton1
+            // 
+            this.selectFolderButton1.Location = new System.Drawing.Point(572, 58);
+            this.selectFolderButton1.Name = "selectFolderButton1";
+            this.selectFolderButton1.Size = new System.Drawing.Size(117, 23);
+            this.selectFolderButton1.TabIndex = 7;
+            this.selectFolderButton1.Text = "Choose Folder";
+            this.selectFolderButton1.UseVisualStyleBackColor = true;
+            this.selectFolderButton1.Click += new System.EventHandler(this.selectFolderButton1_Click);
+            // 
+            // selectFolderButton3
+            // 
+            this.selectFolderButton3.Location = new System.Drawing.Point(572, 147);
+            this.selectFolderButton3.Name = "selectFolderButton3";
+            this.selectFolderButton3.Size = new System.Drawing.Size(117, 23);
+            this.selectFolderButton3.TabIndex = 8;
+            this.selectFolderButton3.Text = "Choose Folder";
+            this.selectFolderButton3.UseVisualStyleBackColor = true;
+            this.selectFolderButton3.Click += new System.EventHandler(this.selectFolderButton3_Click);
+            // 
+            // selectFolderButton2
+            // 
+            this.selectFolderButton2.Location = new System.Drawing.Point(572, 101);
+            this.selectFolderButton2.Name = "selectFolderButton2";
+            this.selectFolderButton2.Size = new System.Drawing.Size(117, 23);
+            this.selectFolderButton2.TabIndex = 9;
+            this.selectFolderButton2.Text = "Choose Folder";
+            this.selectFolderButton2.UseVisualStyleBackColor = true;
+            this.selectFolderButton2.Click += new System.EventHandler(this.selectFolderButton2_Click);
+            // 
+            // folderComboBox1
+            // 
+            this.folderComboBox1.FormattingEnabled = true;
+            this.folderComboBox1.Location = new System.Drawing.Point(64, 58);
+            this.folderComboBox1.Name = "folderComboBox1";
+            this.folderComboBox1.Size = new System.Drawing.Size(461, 24);
+            this.folderComboBox1.TabIndex = 10;
+            // 
+            // folderComboBox2
+            // 
+            this.folderComboBox2.FormattingEnabled = true;
+            this.folderComboBox2.Location = new System.Drawing.Point(64, 101);
+            this.folderComboBox2.Name = "folderComboBox2";
+            this.folderComboBox2.Size = new System.Drawing.Size(461, 24);
+            this.folderComboBox2.TabIndex = 11;
+            // 
+            // folderComboBox3
+            // 
+            this.folderComboBox3.FormattingEnabled = true;
+            this.folderComboBox3.Location = new System.Drawing.Point(64, 147);
+            this.folderComboBox3.Name = "folderComboBox3";
+            this.folderComboBox3.Size = new System.Drawing.Size(461, 24);
+            this.folderComboBox3.TabIndex = 12;
+            // 
+            // showAliasesCheckBox
+            // 
+            this.showAliasesCheckBox.AutoSize = true;
+            this.showAliasesCheckBox.Location = new System.Drawing.Point(572, 247);
+            this.showAliasesCheckBox.Name = "showAliasesCheckBox";
+            this.showAliasesCheckBox.Size = new System.Drawing.Size(164, 21);
+            this.showAliasesCheckBox.TabIndex = 14;
+            this.showAliasesCheckBox.Text = "Print Game Platforms";
+            this.showAliasesCheckBox.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.showAliasesCheckBox);
+            this.Controls.Add(this.folderComboBox3);
+            this.Controls.Add(this.folderComboBox2);
+            this.Controls.Add(this.folderComboBox1);
+            this.Controls.Add(this.selectFolderButton2);
+            this.Controls.Add(this.selectFolderButton3);
+            this.Controls.Add(this.selectFolderButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.combineButton);
-            this.Controls.Add(this.folderTextBox3);
-            this.Controls.Add(this.folderTextBox2);
             this.Controls.Add(this.compareButton);
-            this.Controls.Add(this.folderTextBox1);
             this.Controls.Add(this.listButton);
             this.Name = "MainForm";
             this.Text = "Soft Twat";
@@ -121,12 +172,16 @@ namespace SoftTwat
         #endregion
 
         private System.Windows.Forms.Button listButton;
-        private System.Windows.Forms.TextBox folderTextBox1;
         private System.Windows.Forms.Button compareButton;
-        private System.Windows.Forms.TextBox folderTextBox2;
-        private System.Windows.Forms.TextBox folderTextBox3;
         private System.Windows.Forms.Button combineButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button selectFolderButton1;
+        private System.Windows.Forms.Button selectFolderButton3;
+        private System.Windows.Forms.Button selectFolderButton2;
+        private System.Windows.Forms.ComboBox folderComboBox1;
+        private System.Windows.Forms.ComboBox folderComboBox2;
+        private System.Windows.Forms.ComboBox folderComboBox3;
+        private System.Windows.Forms.CheckBox showAliasesCheckBox;
     }
 }
 
