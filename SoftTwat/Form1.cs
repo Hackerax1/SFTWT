@@ -72,9 +72,9 @@ namespace SoftTwat
             using (SaveFileDialog saveDialog = new SaveFileDialog())
             {
                 saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-                saveDialog.DefaultFileName = "mygames.txt";
                 saveDialog.FilterIndex = 1;
                 saveDialog.RestoreDirectory = true;
+                saveDialog.FileName = "mygames.txt";
 
                 if (saveDialog.ShowDialog() == DialogResult.OK)
                 {
@@ -253,7 +253,7 @@ namespace SoftTwat
                             saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
                             saveDialog.FilterIndex = 1;
                             saveDialog.RestoreDirectory = true;
-                            saveDialog.DefaultFileName = "ourgames.txt";
+                            saveDialog.FileName = "ourgames.txt";
 
                             if (saveDialog.ShowDialog() == DialogResult.OK)
                             {
@@ -306,7 +306,7 @@ namespace SoftTwat
                         saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
                         saveDialog.FilterIndex = 1;
                         saveDialog.RestoreDirectory = true;
-                        saveDialog.DefaultFileName = "mygames.txt";
+                        saveDialog.FileName = "mygames.txt";
 
                         if (saveDialog.ShowDialog() == DialogResult.OK)
                         {
